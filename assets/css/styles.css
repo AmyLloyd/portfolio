@@ -1,0 +1,10 @@
+header {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightslategrey;
+    color:linen;
+}
