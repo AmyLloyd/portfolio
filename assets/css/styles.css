@@ -3,6 +3,14 @@
     box-sizing:border-box;
 }
 
+/*Colour scheme developed using khroma.com*/
+:root {
+    --aquaforest: #62a573;
+    --bonjour: #e5dee0;
+    --trout: #474958;
+    --purple: #950ea6;
+}
+
 html {
     /* 1rem to 10px for easy font-size calculation*/
     font-size: 62.5%;
@@ -23,8 +31,9 @@ header {
 
 nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: lightslategrey;
+    background-color: var(--trout);
     color:linen;
+
 }
 
 /*Revisit what's needed in header and footer since parent inherit*
@@ -34,6 +43,8 @@ body {
     margin: 0;
     padding: 0%;
     display:inherit;
+    align-content: center;
+    background-color: var(--aquaforest);
 }
 
 /*Add footer elements, may not be needed*/
@@ -60,7 +71,7 @@ footer {
     flex-wrap: wrap;
     margin-left: -2rem;
     margin-right: -2rem;
-    background-color: hsl(140, 69%, 41%);
+    /background-color: hsl(140, 69%, 41%);
     justify-content: center;
 
   }
@@ -82,7 +93,7 @@ footer {
     display:flex;
     flex-direction: column;
     flex: 1 0 100%;
-    background-color: #f1f0e8;
+    background-color: var(--trout);
     margin: 2rem;
     padding: 0rem;
 }
@@ -108,19 +119,19 @@ footer {
     /border-color: black;
     /padding-top: 5%;
     /padding-bottom: 5%;
-    background-color: red;
+    background-color: var(--bonjour);
     /padding-left: 5%;
     /padding-right: 5%; 
 }
 
 .card-footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: orange;
-    position:relative;
+    background-color: var(--purple);
+    color: var(--bonjour);
+    line-height: 3rem;
+    position: relative;
     top: -70%;
 }
-
-
 
 @media screen and (min-width: 768px) {
     /*on tablets columns 50% of width and not grow*/
