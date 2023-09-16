@@ -53,12 +53,10 @@ footer {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    /*
-    margin-left: -#
-    margin-right: -#
-    */
-    background-color: #f1f1f1;
-      justify-content: center;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    background-color: hsl(140, 69%, 41%);
+    justify-content: center;
 
   }
   
@@ -76,21 +74,19 @@ footer {
   /*removed display:flex as this is inherited from parent*/
   /*Had to consider column changed width to height?*/
 .card-column {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    flex: 1 0 300px;
-    min-height:100%;
+    flex: 1 0 100%;
     background-color: yellow;
-    margin: 10px;
-    padding: 0rem;
-    font-size: large; 
+    margin-bottom: 10rem;
+    padding: 5rem;
 }
 
 .card-body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    
     border-color:black;
     border:black dotted 2px;
     background-color: gray;
@@ -118,4 +114,19 @@ footer {
     background-color: orange;
     align-content: center;
 }
-*/
+
+
+
+@media screen and (min-width: 768px) {
+    /*on tablets columns 50% of width and not grow*/
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+@media screen and (min-width: 992px) {
+    .card-column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%
+    }
+}
