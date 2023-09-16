@@ -1,5 +1,25 @@
+/*Applies to everything*/
+* {
+    box-sizing:border-box;
+}
 
+/*May change as needed*/
+html
+{
+    height: auto;
+    width:100%;
+    margin: 0;
+    padding:0;
+}
+
+/*All header CSS here*/
+
+
+/*Later, consider combining padding width and margin*/
 header {
+    width: 96%;
+    margin:0;
+    padding: 0%;
     display:flex;
     flex-wrap: wrap;
 }
@@ -8,4 +28,47 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: lightslategrey;
     color:linen;
+}
+
+/*Revisit what's needed in header and footer since parent inherit*/
+body {
+    width: 96%;
+    margin: 0;
+    padding: 0%;
+}
+
+/*Add footer elements, may not be needed*/
+footer {
+    width: 96%;
+    margin: 0;
+    padding: 0%;
+}
+
+.row-justify-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+}
+
+.card-body {
+    display: flex;
+}
+
+.card-image {
+    border: 20px;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%; 
+}
+
+.card-footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
