@@ -22,11 +22,13 @@ nav {
     color:linen;
 }
 
-/*Revisit what's needed in header and footer since parent inherit*/
+/*Revisit what's needed in header and footer since parent inherit*
+Added display:inherit to over-ride user agent stylesheet*/
 body {
     width: 96%;
     margin: 0;
     padding: 0%;
+    display:inherit;
 }
 
 /*Add footer elements, may not be needed*/
@@ -51,12 +53,14 @@ Trying code from w3*/
 .flex-container {
     display: flex;
     background-color: #f1f1f1;
+
   }
   
   .card-column {
+    display: flex;
     background-color: DodgerBlue;
     color: white;
-    width: 100px;
+    width: 100%;
     margin: 10px;
     text-align: center;
     line-height: 75px;
