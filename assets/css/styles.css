@@ -19,8 +19,9 @@ html {
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: xx-large;
-    line-height: 2rem;
+    line-height: 4rem;
     margin: 1rem;
+    display: inline;
 }
 
 /*Add override for user-agent stylesheet to allow flex-wrap*/
@@ -35,8 +36,8 @@ p, h2 {
 /*Later, consider combining padding width and margin*/
 header {
     width: 100%;
-    margin:2%;
-    padding: 2%;
+    margin:0px;
+    padding: 1rem;
     display: block;
     flex-wrap: wrap;
     background-color: var(--swiss-coffee);
@@ -164,6 +165,14 @@ footer {
     position: relative;
     top: -70%;
     margin: -4rem 0 -2rem 0;
+}
+
+#amy-lloyd-logo {
+    float:right;
+    height: 75%;
+    width: 10%;
+    margin: 0 2rem 0 2rem;
+
 }
 
 @media screen and (min-width: 768px) {
