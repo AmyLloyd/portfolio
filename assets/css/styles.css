@@ -16,6 +16,16 @@ html {
     font-size: 62.5%;
 }
 
+/*Revisit what's needed in header and footer since parent inherit*
+Added display:inherit to over-ride user agent stylesheet*/
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    align-content:center;
+    background-color: var(--aquaforest);
+}
+
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 6rem;
@@ -28,8 +38,8 @@ h1 {
 p, h2 {
     display:inherit;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 3rem;
-    margin: 3rem 0 3rem 0;
+    line-height: 1rem;
+    margin: 3rem 0 1rem 0;
     font-size: x-large;
 
 }
@@ -43,7 +53,7 @@ header {
     background-color: var(--swiss-coffee);
 }
 
-.nav {
+nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--trout);
     color:linen;
@@ -57,7 +67,9 @@ header {
  
 }
 
-.li {
+.nav-tags {
+    color: var(--swiss-coffee);
+    text-decoration: none;   
     display: inline;
     font-size: 20px;
     padding: 20px;
@@ -70,16 +82,7 @@ ul {
     /margin-block-start: 0rem;
 }
 
-/*Revisit what's needed in header and footer since parent inherit*
-Added display:inherit to over-ride user agent stylesheet*/
-body {
-    width: 96%;
-    margin: 0;
-    padding: 0%;
-    /display: inherit;
-    align-content: center;
-    background-color: var(--aquaforest);
-}
+
 
 /*Add footer elements, may not be needed*/
 footer {
@@ -181,12 +184,12 @@ footer {
     align-items: center;
 }
 
+/*on tablets columns 50% of width and not grow*/
 @media screen and (min-width: 768px) {
-    /*on tablets columns 50% of width and not grow*/
     .card-column {
         flex: 0 0 50%;
         max-width: 50%;
-    }
+}
     
 @media screen and (min-width: 992px) {
     .card-column {
