@@ -3,56 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Amy Lloyd Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+        <!-- title, subtitle and nav-->
         <header>
             <h1><span class=large-letter>A</span>my <span class=large-letter>L</span>loyd</h1>
-            <img id=amy-lloyd-logo src="assets/images/A logo.jpg" alt="Fancy A" style="width: 200px; height: 200px">
+            <img id=amy-lloyd-logo src="assets/images/A logo.jpg" alt="Fancy A" style="max-width:40%; height:auto;">
             <p>Creating great stuff</p>
-
+            <nav>
+                <a href="/About Me/" class="nav-tags">About Me</a>
+                <a href="/Project/" class="nav-tags">Projects</a>
+                <a href="/Contact Me" class="nav-tags">Contact Me</a>
+            </nav>
         </header>
-        <nav>
-            <a href="/About Me/" class="nav-tags">About Me</a>
-            <a href="/Project/" class="nav-tags">Projects</a>
-            <a href="/Contact Me" class="nav-tags">Contact Me</a>
-        </nav>
-        <main>
-            <h2>About Me</h2>
-            <p>This is information about me.</p>
-            <h2>Projects</h2>
-            <section class="flex-container">
-                <div class="card-column"> 
-                    <div class="card-body">
-                        <a class="card-image" href="https://create-88.github.io/prework-study-guide/">
-                            <img  src="assets/images/Prework-website.PNG" alt="Website with title prework" >
-                        </a>
-                        <h2 class="card-footer">This is the header in card column</h2>
-                    </div>
-                </div>
-                
-                <div class="card-column">Card column 2
-                    <div class="card-body">This is the card-body </div>
-                    <a class="card-image" href="https://create-88.github.io/mod-one-refactor">
-                        <img  src="assets\images\refactor-practice.PNG" alt=#>Project team collaborating</div>
-                    </a>
-                    
-                    <h2 class="card-footer">This is the header in card column</h2>
-                    <h3>this is the card-column</h3>
-                                    
-                </div>
 
-                <div class="card-column">Card column 2
-                    <div class="card-body">This is the card-body </div>
-                    <div class="card-image" src=# alt=#>This is the card-image</div>
-                    <h2 class="card-footer">This is the header in card column</h2>
-                    <h3>this is the card-column</h3>
-                                    
-                </div>
+        <main>
+            <!--about me-->
+            <section>
+                <h2>About Me</h2>
+                <p>This is information about me.</p>
             </section>
+
+            <!--portfolio projects container-->
+            <section>
+                <h2>Projects</h2>
+                <div class="flex-container">
+                    <div class="card-column"> 
+                        <div class="card-body">
+                            <h2 class="card-footer">Prework Study Guide</h2>
+                            <a class="card-image" href="https://create-88.github.io/prework-study-guide/">
+                                <img  src="assets/images/Prework-website.PNG" alt="Website with title prework" style="width:100%; height:100%;">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="card-column">
+                        <div class="card-body">
+                            <h2 class="card-footer">Refactoring from Starter-Code</h2>  
+                            <a class="card-image" href="https://create-88.github.io/mod-one-refactor">
+                                <img  src="assets\images\refactor-practice.PNG" alt="Project team collaborating" style="width:100%; height:100%;"</div>
+                          </a>
+                            
+                        </div>        
+                    </div>
+                                       
+                </div>
+            <section></section>
             <h2>Contact Me</h2>  
 
         </main>
