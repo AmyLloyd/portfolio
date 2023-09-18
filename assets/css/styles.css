@@ -3,7 +3,7 @@
     box-sizing:border-box;
 }
 
-/*Colour scheme pallette developed using khroma.com*/
+/*Set colour scheme pallette developed using khroma.com*/
 :root {
     --aquaforest: #62a573;
     --swiss-coffee: #e1dad9;
@@ -16,13 +16,12 @@ html {
     font-size: 62.5%;
 }
 
-/*Revisit what's needed in header and footer since parent inherit*
-Added display:inherit to over-ride user agent stylesheet*/
+
 body {
     width: 96%;
     margin: 2%;
     padding: 0;
-    /align-content:center;
+    align-content:center;
     background-color:var(--aquaforest);
 }
 
@@ -64,6 +63,7 @@ nav {
     width: 100%;
  }
 
+ /*style navigation tags to override small underlined link style*/
 .nav-tags {
     color: var(--swiss-coffee);
     text-decoration: none;   
@@ -78,18 +78,7 @@ footer {
     margin: 0;
     padding: 0%;
 }
-/*Added foundation of card styling - not successful yet
-.flex-container {
-    display: flex;
-    background-color: pink;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    align-items: flex-start;
-}
-*/
+
 /*May need to add negative margins*/
 .flex-container {
     display: flex;
@@ -101,19 +90,7 @@ footer {
 
   }
   
-  /*.card-column {
-    display: flex;
-    background-color: DodgerBlue;
-    color: white;
-    width: 100%;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }*/
 
-  /*removed display:flex as this is inherited from parent*/
-  /*Had to consider column changed width to height?*/
 .card-column {
     display:flex;
     flex: 1 0 100%;
@@ -136,8 +113,6 @@ footer {
     padding: 5% 10%;
 }
 
-
-
 .card-image {
     width: 100%;
     /min-height: 100%;
@@ -149,7 +124,6 @@ footer {
     background-color: var(--swiss-coffee);
 
 }
-
 
 .card-footer {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -166,11 +140,12 @@ footer {
 /*Add avatar logo in header float right*/
 #amy-lloyd-logo {
     float:right;
-    height: 75%;
+    height: 95%;
     width: 15%;
     /padding-bottom: 2rem;
  }
 
+ /*Add span to make first letter of each word in title larger and bold*/
 .large-letter {
     font-size: 15rem;
     font-style:bold;
@@ -184,10 +159,17 @@ footer {
         max-width: 50%;
     }
 }
-    
+
+/*on larger screens three columns and no shrinking*/
 @media screen and (min-width: 992px) {
     .card-column {
-        flex: 0 0 33.33%;
-        max-width: 33.33%
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+
+    #larger-width {
+        flex: 1 0 33.33%;
+        max-width: 66.66%;
     }
 }
+
