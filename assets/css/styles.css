@@ -122,6 +122,22 @@ footer {
     background-repeat: no-repeat;
 }
 
+#preworkguide {
+    background-image: url(../images/Prework-website.PNG);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+#coming-soon {
+    background-image: url(../images/image-from-rawpixel-id-3370471-original.png);
+    background-size: contain;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    background-color: var(--swiss-coffee);
+    background-position-y: center;
+}
+
 /*Card bodies are the base cards with direction as column to justify content to. They are a coloured base for simple adjustment of layout.*/ 
 .card-body {
     display: flex;
@@ -142,7 +158,6 @@ footer {
     left: 0%;
     background-color: var(--swiss-coffee);
     z-index: 1;
-
 }
 
 .card-footer {
@@ -153,11 +168,10 @@ footer {
     position: absolute;
     bottom: 10px;
     margin: 0px;
-
-
     padding:5% 5% 5% 5%;
     left: 0px;
     font-size: 30px;
+    width: 100%;
 }
 
 /*Add avatar logo in header float right*/
