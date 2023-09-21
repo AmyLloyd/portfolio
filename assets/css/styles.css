@@ -103,8 +103,8 @@ footer {
     flex-wrap: wrap;
     margin-left: 1rem;
     margin-right: 1rem;
-    justify-content:space-evenly;
-}
+    justify-content:space-between;
+    }
   
 /*Card columns have ben created to define the widths for the cards*/
 .card-column {
@@ -124,7 +124,7 @@ footer {
 
 #preworkguide {
     background-image: url(../images/Prework-website.PNG);
-    background-size: cover;
+    background-size: auot;
     background-position-x: center;
     background-repeat: no-repeat;
 }
@@ -216,7 +216,7 @@ footer {
 /*on tablets columns 50% of width and not grow*/
 @media screen and (min-width: 768px) {
     .card-column {
-        flex: 0 0 45%;
+        flex: 1 0 45%;
         max-width: 50%;
     }
 }
@@ -224,13 +224,14 @@ footer {
 /*on larger screens three columns and no shrinking*/
 @media screen and (min-width: 992px) {
     .card-column {
-        flex: 0 0 25%;
+        flex: 1 0 25%;
         max-width: 33%;
     }
 
-    #larger-width {
-        flex: 1 0 33.33%;
+    .larger-width {
+        flex: 1 0 60%;
         max-width: 70%;
+    }
 
     #flying-birds {
         min-width: 50%;
