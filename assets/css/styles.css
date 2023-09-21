@@ -23,6 +23,7 @@ body {
     padding: 0;
     align-content:center;
     background-color:var(--aquaforest);
+    
 }
 
 h1 {
@@ -34,13 +35,28 @@ h1 {
     color: black;
 }
 
+#subheading {
+    font-style: italic;
+}
+
 /*Add override for user-agent stylesheet to allow flex-wrap*/
-p, h2 {
+h2 {
     display: block;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 4rem;
     margin: 2rem 2rem 1rem 2rem;
     font-size:3vw;
+    margin-top: 60px;
+}
+
+/*Add override for user-agent stylesheet to allow flex-wrap*/
+p {
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 4rem;
+    margin: 2rem 2rem 1rem 2rem;
+    font-size: 16px;
+    margin-top: 10px;
 }
 /*Later, consider combining padding width and margin*/
 header {
